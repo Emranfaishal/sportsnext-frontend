@@ -1,3 +1,4 @@
+import BookingPlayer from "@/componets/BookingPlayer";
 import { SportDeletePage } from "@/componets/SportDeleteCard";
 import SportEditModel from "@/componets/SportEditModel";
 import Image from "next/image";
@@ -19,12 +20,16 @@ const SportDetailsPage = async ({ params }) => {
                 <SportDeletePage data={data}></SportDeletePage>
             </div>
             <Image src={imageUrl} alt={destinationName} height={700} width={700}></Image>
-            <div>
+            <div className="">
                 <h2>{destinationName}</h2>
                 <p>{description}</p>
                 <p>{country}</p>
                 <p>{price}</p>
+                <BookingPlayer data={data}></BookingPlayer>
             </div>
+            
+                
+            
         </div>
     );
 };
