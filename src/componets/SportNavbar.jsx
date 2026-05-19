@@ -6,7 +6,7 @@ const SportNavbar = () => {
         <nav className='flex justify-between p-5'>
             <ul className='flex gap-3'>
                 <li><Link href={'/'}>Home</Link></li>
-                <li><Link href={'/addFacility'}>Add Facility</Link></li>
+                <li><Link href={'/addPlayer'}>Add to Player</Link></li>
                 <li><Link href={'/myBooking'}>My Booking</Link></li>
                 <li><Link href={'/allFacilities'}>All Facilities</Link></li>
                 <li><Link href={'/addMemberShip'}>Add Member Ship</Link></li>
