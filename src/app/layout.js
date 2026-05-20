@@ -2,6 +2,7 @@ import { Josefin_Sans } from "next/font/google";
 import "./globals.css";
 import SportNavbar from "@/componets/SportNavbar";
 import SportFooter from "@/componets/SportFooter";
+import toast, { Toaster } from 'react-hot-toast';
 
 const josefin = Josefin_Sans({
   subsets: ["latin"],
@@ -16,6 +17,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
+    
     <html
       lang="en"
       className={`${josefin.className} h-full antialiased`}
@@ -24,6 +26,7 @@ export default function RootLayout({ children }) {
         <SportNavbar></SportNavbar>
         {children}
         <SportFooter></SportFooter>
+        <Toaster />
       </body>
     </html>
   );

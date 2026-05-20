@@ -12,7 +12,8 @@ const SingInPage = () => {
         console.log(user);
         const { data, error } = await authClient.signIn.email({
             email: user.email,
-            password: user.password
+            password: user.password,
+            rememberMe:true,
         });
         console.log({ data, error });
         if (data) {

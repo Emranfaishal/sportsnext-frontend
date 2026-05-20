@@ -2,16 +2,22 @@
 
 
 import { authClient } from '@/lib/auth-client';
+// import { useSession } from '@/lib/auth-client';
+// import { authClient } from '@/lib/auth-client';
+// import  authClient  from '@/lib/auth-client';
 import { Avatar, Button } from '@heroui/react';
 import Link from 'next/link';
 
 
 const SportNavbar = () => {
 
+    // const { data: session } = authClient?.useSession();
+
     const { data: session } = authClient?.useSession();
     console.log("Session:", session);
     const user = session?.user;
-    console.log("user",user);
+    console.log("user", user);
+
     const handleOut = async () => {
         await authClient.signOut();
     }
