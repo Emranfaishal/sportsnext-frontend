@@ -6,7 +6,7 @@ const addMemberShip = () => {
         const fromData = new FormData(e.currentTarget);
         const members = Object.fromEntries(fromData.entries());
         console.log(members);
-        const res = await fetch('http://localhost:5000/sportsCollection', {
+        const res = await fetch(`${process.env.BACKEND_URL}/sportsCollection`, {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

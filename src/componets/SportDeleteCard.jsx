@@ -11,7 +11,7 @@ export function SportDeletePage({ data }) {
 
     const handleDelete = async () => {
         try {
-            const res = await fetch(`http://localhost:5000/sportsCollection/${_id}`, {
+            const res = await fetch(`${process.env.BACKEND_URL}/sportsCollection/${_id}`, {
                 method: 'DELETE',
             });
 

@@ -12,7 +12,7 @@ const SportEditModel = ({ data }) => {
         const members = Object.fromEntries(fromData.entries());
         console.log(members);
 
-        const res = await fetch(`http://localhost:5000/sportsCollection/${_id}`, {
+        const res = await fetch(`${process.env.BACKEND_URL}/sportsCollection/${_id}`, {
             method: 'PATCH',
             headers: {
                 'content-type': 'application/json'

@@ -1,7 +1,7 @@
 import AllSportsCard from "@/componets/AllSportsCard";
 
 const AddPlayerPage = async () => {
-    const res = await fetch('http://localhost:5000/sportsCollection');
+    const res = await fetch(`${process.env.BACKEND_URL}/sportsCollection`);
     const sportData = await res.json();
     console.log(sportData);
     return (

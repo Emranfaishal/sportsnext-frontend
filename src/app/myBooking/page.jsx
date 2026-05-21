@@ -11,13 +11,10 @@ const MyBookingPage = async () => {
     });
     // console.log(session);
     const user = session?.user;
-    // console.log(user);
-    const res = await fetch(`http://localhost:5000/booking/${user?.id}`);
+    console.log(user);
+    const res = await fetch(`${process.env.BACKEND_URL}/booking/${user?.id}`);
     const bookings = await res.json();
     // console.log("data",data);
-
-
-
     return (
         <div>
             <h2>my booking player</h2>
