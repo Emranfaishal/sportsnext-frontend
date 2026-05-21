@@ -22,7 +22,7 @@ const SportNavbar = () => {
                     {/* Logo */}
                     <Link href="/" className="flex items-center gap-2">
                         <span className="text-3xl font-bold tracking-tighter text-white">
-                            Study<span className="text-[#C5A358]">Nook</span>
+                            FootBoll<span className="text-[#C5A358]">Sports</span>
                         </span>
                     </Link>
 
