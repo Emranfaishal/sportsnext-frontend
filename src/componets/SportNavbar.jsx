@@ -22,14 +22,13 @@ const SportNavbar = () => {
                     {/* Logo */}
                     <Link href="/" className="flex items-center gap-2">
                         <span className="text-3xl font-bold tracking-tighter text-white">
-                            FootBoll<span className="text-[#C5A358]">Sports</span>
+                            FootBoll Sports<span className="text-[#C5A358]"> PSG</span>
                         </span>
                     </Link>
 
                     {/* Desktop Menu */}
                     <div className="hidden lg:flex items-center gap-8 text-white font-medium">
                         <Link href="/" className="hover:text-[#C5A358] transition-colors">Home</Link>
-                        <Link href="/addPlayer" className="hover:text-[#C5A358] transition-colors">Rooms</Link>
                         {user && (
                             <>
                                 <Link href="/allFacilities" className="hover:text-[#C5A358] transition-colors">Add Room</Link>
